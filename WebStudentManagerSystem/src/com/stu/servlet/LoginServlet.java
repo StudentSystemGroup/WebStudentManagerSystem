@@ -27,16 +27,15 @@ public class LoginServlet extends HttpServlet
 		int i=u.login(ius);
 		if(i==1)
 		{
-			request.getSession().setAttribute("ius",ius);
-			out.println("<script>location.href='addStu.jsp';</script>");
+			out.println("<script language='javascript'>location.href='addStu.jsp';</script>");
 		}
 		else if(i==2)
 		{
-			out.println("<script>alert('密码错误！');location.href='login.jsp';</script>");
+			out.println("<script language='javascript'>alert('密码错误！');location.href='login.jsp';</script>");
 		}
 		else if(i==3)
 		{
-			out.println("<script>alert('用户名不存在！');location.href='login.jsp';</script>");
+			out.println("<script language='javascript'>alert('用户名不存在！');location.href='login.jsp';</script>");
 		}
 	}
 }

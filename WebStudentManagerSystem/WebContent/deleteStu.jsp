@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<%@ page import="java.util.*,com.stu.bean.Admin" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +21,9 @@ function check(form)
 <body onLoad="form1.id.focus()">
 
 <div id="d3">
-<% Admin ius=(Admin)session.getAttribute("ius"); %>
 <table style="height:100%;width:100%">
 <tr><td id="z3">学生信息管理系统</td>
-<td id="z4">当前登陆账号：<%= ius.getName()%></td>
+<td></td>
 <td id="t1"><a href="login.jsp">退出登录</a></td></tr>
 </table>
 </div>
